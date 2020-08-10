@@ -14,8 +14,6 @@ c) Combining both features to build a better model. (Requires a lot of time to r
 
 I have chosen to use the third method.
 
-The labels have been converted to categorical data for classification.
-
 #### Extracting the Spectrogram for every Audio :
 
 A spectrogram is a visual representation of the spectrum of frequencies of a signal as it varies with time. When applied to an audio signal, spectrograms are sometimes
