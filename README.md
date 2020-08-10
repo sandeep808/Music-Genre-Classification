@@ -51,6 +51,19 @@ where S(k) is the spectral magnitude at frequency bin k, f(k) is the frequency a
 
 #### Zero Crossing Rate :
         The zero-crossing rate is the rate of sign-changes along a signal, i.e., the rate at which the signal changes from positive to zero to negative or from negative to zero to positive.
-        
+ 
+ 
+#### Mel-Frequency Cepstral Coefficients (MFCCs) :
+
+A signal goes through a pre-emphasis filter,
+
+then gets sliced into (overlapping) frames and a window function is applied to each frame; afterwards,
+
+we do a Fourier transform on each frame (or more specifically a Short-Time Fourier Transform) and calculate the power spectrum; and subsequently compute the filter banks.
+
+To obtain MFCCs, a Discrete Cosine Transform (DCT) is applied to the filter banks retaining a number of the resulting coefficients while the rest are discarded.
+
+Final step is mean normalization.
+ 
         
         We write the data to a csv file.
