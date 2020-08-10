@@ -4,6 +4,18 @@ Extracting music and features Dataset We use GTZAN genre collection dataset for 
 
 The dataset consists of 10 genres i.e Blues Classical Country Disco Hiphop Jazz Metal Pop Reggae Rock Each genre contains 100 songs. Total dataset: 1000 songs.
 
+#### There are 3 basic methods to extract features from audio file : 
+
+a) Using the mffcs data of the audio files
+
+b) Using a spectogram image of the audio and then converting the same to data points (As is done for images). This is easily done using mel_spectogram function of Librosa
+
+c) Combining both features to build a better model. (Requires a lot of time to read and extract data).
+
+I have chosen to use the third method.
+
+The labels have been converted to categorical data for classification.
+
 #### Extracting the Spectrogram for every Audio :
 
 A spectrogram is a visual representation of the spectrum of frequencies of a signal as it varies with time. When applied to an audio signal, spectrograms are sometimes
